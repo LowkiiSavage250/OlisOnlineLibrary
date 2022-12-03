@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Reservationsstyle.css">
+	<title>Insert A Reservation</title>
+</head>
+<body>
+	<div class="sidenavbar">
+		<a href="index.html">HomePage</a><br>
+    <a href="DisplayClients.php">Clients</a><br>
+    <a href="DisplayBooks.php">Books</a><br>
+    <a href="DisplayReservations.php">Reservations</a>
+    <a href="DeleteReservations.html">Delete Reservations</a>
+    <a href="InsertReservations.html">Insert Reservations</a>
+    <a href="UpdateReservations.html">Update Reservations</a><br>
+	</div>
+	<div class="body-text">
+		<form action="InsertReservations.php" method="post">
+			BookNo: <input type="text" name="bookNo"><br>
+			ClientNo: <input type="text" name="clientNo"><br>
+			DateOut: <input type="text" name="dateOut"><br>
+			DateDue: <input type="text" name="dateDue"><br><br><br>
+			<input type="submit">
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Booksstyle.css">
+	<title>Update A Book</title>
+</head>
+<body>
+	<div class="sidenavbar">
+		<a href="DisplayClients.php">Clients</a><br>
+		<a href="DisplayBooks.php">Books</a>
+		<a href="DeleteBooks.html">Delete Books</a>
+    	<a href="InsertBooks.html">Insert Books</a>
+    	<a href="UpdateBooks.html">Update Books</a><br>
+		<a href="DisplayReservations.php">Reservations</a><br>
+	</div>
+	<div class="body-text">
+		<form action="InsertBooks.php" method="post">
+			BookNo: <input type="text" name="bookNo"><br>
+			Title: <input type="text" name="title"><br>
+			Author: <input type="text" name="author"><br>
+			Year: <input type="text" name="year"><br>
+			Price: <input type="text" name="price"><br><br><br>
+			<input type="submit">
+		</form>
+	</div>
+</body>
+</html>

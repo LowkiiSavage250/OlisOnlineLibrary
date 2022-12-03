@@ -1,0 +1,89 @@
+Body
+{
+	height: 100%;
+	margin: 0;
+	background-color:sandybrown;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1.h1_style
+{
+	color: black;
+	background-color: sandybrown;
+	font-family: cursive;
+	margin: 0;
+	text-align: center;
+}
+
+.sidenavbar
+{
+	height: 100%;
+	width: 170px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: black;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.sidenavbar a 
+{
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+}
+
+.sidenavbar a:hover 
+{
+	color: sandybrown;
+}
+
+.body-text 
+{
+	margin-left: 170px;
+	font-size: 18px;
+	background-color: black;
+	color: #818181;
+	display: inline-flex;
+}
+
+@media screen and (max-height: 450px) 
+{
+	.sidenavbar {padding-top: 15px;}
+	.sidenavbar a {font-size: 18px;}
+}
+
+p.paragraph
+{
+	margin-top: 0px;
+	margin-left: 170px;
+	font-size: 25px;
+	background-color: black;
+	color: #818181;
+	display: inline-flex;
+}
+
+table 
+{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td 
+{
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover
+{
+	background-color: sandybrown;
+	color: black;
+}
