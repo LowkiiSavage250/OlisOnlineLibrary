@@ -34,14 +34,13 @@
       $age = $_POST["age"];
       $email = $_POST["email"];
 
-      $sql = "Select clientNo, name, age, email From Clients Where clientNo = '$
-      clientNo'";
+      $sql = "Select clientNo, name, age, email From Clients Where clientNo = '$clientNo'";
       $result = $conn->query($sql);
 
 
       if ($result->num_rows > 0)
       {
-        $sql = "UPDATE Clients SET name = '$name', age = '$age', email = '$email' WHERE clientNo = '$clientNo'";
+        $sql = "UPDATE Clients SET clientNo = '$clientNo', name = '$name', age = '$age', email = '$email' WHERE clientNo = '$clientNo'";
         $result = $conn->query($sql);
         echo "Record updated successfully"; 
       } 
